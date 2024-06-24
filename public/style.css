@@ -1,0 +1,29 @@
+.hero{
+    min-height: 100vh;
+    background-image:url(images/imagessalon\ 1.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    align-items: center;
+    display: flex;
+}
+.hero .content{
+    max-width:85% ;
+    padding: 1.4rem 8%;
+}
+
+.hero .content h1 {
+font-size: 5rem;
+color: white;
+text-shadow:1px 1px 8px rgb(23, 25, 26);
+}
+
+.hero .content p{
+    font-size: 1.4rem;
+    color:rgb(18, 18, 19);
+}
+
+.hero .content .btn{
+    background-color: rgb(252, 8, 158);
+    font-size: 1.5rem;
+}
