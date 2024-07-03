@@ -1,73 +1,61 @@
 @extends('layouts.app')
 @section('title')
-  Admin
+  product
 @endsection
 @section('content')
-<h3 class="mt-3">create admin</h3>
+<h3 class="mt-3">create product</h3>
 <hr><div class="card">
   <div class="card-header">
-  formulir tambah admin
+  formulir tambah product
   </div>
   <div class="card-body">
-  <form action="/saveadmin" method="post" enctype="multipart/form-data">
+  <form action="/saveproduct" method="post" enctype="multipart/form-data">
     @csrf
 
 <div class="mb-3 row">
-    <label for="nama adminl" class="col-sm-2 col-form-label">nama admin</label>
+    <label for="nama admin" class="col-sm-2 col-form-label">Product</label>
     <div class="col-sm-10">
-      <input type="text" name="nama_admin" class="form-control" id="nama admin">
+      <input type="text" name="product" class="form-control" id="nama admin">
     </div>
   </div>
   <div class="mb-3 row">
-    <label for="no.handphone" class="col-sm-2 col-form-label">no.handphone</label>
+    <label for="no.handphone" class="col-sm-2 col-form-label">Harga</label>
     <div class="col-sm-10">
-      <input type="text" name="nohp_admin" class="form-control" id="infut no.handphone">
+      <input type="text" name="price" class="form-control" id="infut no.handphone">
     </div>
   </div>
   <div class="mb-3 row">
-    <label for="inputPassword" class="col-sm-2 col-form-label">password</label>
+    <label for="inputPassword" class="col-sm-2 col-form-label">Stok</label>
     <div class="col-sm-10">
-      <input type="password" name="password_admin" class="form-control" id="inputPassword">
+      <input type="text" name="stock" class="form-control" id="inputPassword">
     </div>
   </div>
   <div class="mb-3 row">
-    <label for="alamat" class="col-sm-2 col-form-label">alamat</label>
+    <label for="email" class="col-sm-2 col-form-label">Suplayer</label>
     <div class="col-sm-10">
-      <textarea name="alamat_admin" class="form-control" id="input alamat" 
-      placeholder="masukkan alamat admin"></textarea>
+      <input type="text" name="suplayer" class="form-control" id="input email">
     </div>
   </div>
   <div class="mb-3 row">
-    <label for="jenis kelamin" class="col-sm-2 col-form-label">jenis kelamin</label>
+    <label for="jenis kelamin" class="col-sm-2 col-form-label">Status</label>
     <div class="col-sm-10">
-    <select name="jk_admin" id="stts" class="form-select">
-    <option value="">--pilih jenis kelamin--</option>
-    <option value="laki-laki">laki-laki</option>
-    <option value="perempuan">perempuan</option>
+    <select name="status" id="stts" class="form-select">
+    <option value="">--pilih status product--</option>
+    <option value="best_product">best_product</option>
+    <option value="nonbest_product">nonbest_product</option>
     </select>
     </div>
   </div>
-  <div class="mb-3 row">
-    <label for="email" class="col-sm-2 col-form-label">email</label>
-    <div class="col-sm-10">
-      <input type="email" name="email_admin" class="form-control" id="input email">
-    </div>
-  </div>
-  <div class="mb-3 row">
-    <label for="jabatan" class="col-sm-2 col-form-label">jabatan</label>
-    <div class="col-sm-10">
-      <input type="text" name="jabatan_admin" class="form-control" id="input jabatan">
-    </div>
-  </div>
+
   <div class="mb-3 row">
     <label for="foto" class="col-sm-2 col-form-label">foto</label>
     <div class="col-sm-10">
-      <input type="file" name="foto_admin" class="form-control" id="foto"accept="images/*">
+      <input type="file" name="product_image" class="form-control" id="foto"accept="images/*">
     </div>
   </div>
 
   <div class="mb-3">
-  <button class="btn btn-primary" type="submit">save admin</button>
+  <button class="btn btn-primary" type="submit">save product</button>
   </div>
   </form>
   </div>

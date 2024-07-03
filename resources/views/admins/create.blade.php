@@ -33,7 +33,7 @@
   <div class="mb-3 row">
     <label for="alamat" class="col-sm-2 col-form-label">alamat</label>
     <div class="col-sm-10">
-      <textarea name="alamat_admin" class="form-control" id="input alamat" 
+      <textarea name="alamat_admin" class="form-control" id="input alamat"
       placeholder="masukkan alamat admin"></textarea>
     </div>
   </div>

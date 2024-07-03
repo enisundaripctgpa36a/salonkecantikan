@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Models\Admin;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Storage;
 
 class AdminController extends Controller
 {
@@ -129,7 +130,7 @@ class AdminController extends Controller
         } else {
             $path = $request->foto_lama;
         }
-        
+
 
         $admin = Admin::find($id);
         $admin->jk_admin = $request['jk_admin'];
